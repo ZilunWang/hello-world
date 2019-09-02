@@ -1,0 +1,1318 @@
+[I 2019-09-02 06:11:08.0838] Agent started as Administrator
+[I 2019-09-02 06:11:08.0839] Argument[0]: '--locale=enUS'
+Argument[1]: '--session=500010294995226718'
+[I 2019-09-02 06:11:08.0847] Initialize HttpProtocol Server Called
+[I 2019-09-02 06:11:08.0848] Agent started on port #1120
+[W 2019-09-02 06:11:08.0982] Authorizing client '/Users/wangzilun/Desktop/World-of-Warcraft-Setup.app/Contents/MacOS/World-of-Warcraft-Setup' (24096) for communication
+[I 2019-09-02 06:11:09.0034] Handle Event: "update agent event"
+[I 2019-09-02 06:11:09.0038] Checking Network Connection status to http://cn.patch.battlenet.com.cn:1119/agent
+[I 2019-09-02 06:11:09.0038] Request GET /agent {}
+Response 200 (190.2320 ms): {
+	"pid" : 24098.000000,
+	"user_id" : "501",
+	"user_name" : "wangzilun",
+	"state" : 1007.000000,
+	"version" : "2.18.1.6817",
+	"region" : "cn",
+	"type" : "retail",
+	"opt_in_feedback" : true,
+	"session" : "500010294995226718",
+	"authorization" : "ACBA43F3FA7AC711D3601022FEC67049"
+}
+[I 2019-09-02 06:11:09.0048] Request POST /agent {
+	"opt_in_feedback" : true
+}
+Response 200 (0.0160 ms): {}
+[I 2019-09-02 06:11:09.0058] Request GET /game {}
+Response 200 (0.0790 ms): {
+	"agent" : {
+		"link" : "/game/agent"
+	},
+	"battle.net" : {
+		"link" : "/game/battle.net"
+	}
+}
+[I 2019-09-02 06:11:09.0078] Request GET /game/agent {}
+Response 200 (0.2270 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Users/Shared/Battle.net/Agent",
+	"installed" : true,
+	"installed_locales" : [],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "agent",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "",
+	"selected_asset_locale" : "",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "Agent\\.(%d)*\\\\Agent\\.app",
+			"relative_path" : "Agent.app",
+			"switcher" : true,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		""
+	],
+	"update_method" : "containerless ngdp",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 0.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "2.18.1.6817",
+	"active_config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+	"playable" : true
+}
+[I 2019-09-02 06:11:09.0088] Request GET /game/battle.net {}
+Response 200 (0.2030 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"zhCN"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 0.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"playable" : true
+}
+[I 2019-09-02 06:11:09.0098] Request POST /version {
+	"uid" : "battle.net"
+}
+Response 200 (0.0960 ms): {
+	"response_uri" : "/version/battle.net"
+}
+[I 2019-09-02 06:11:09.0311] Request GET /version/battle.net {}
+Response 200 (0.1640 ms): {
+	"state" : 1007.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"playable" : true
+}
+[I 2019-09-02 06:11:09.0831] Network Connection Response to http://cn.patch.battlenet.com.cn:1119/agent - CURL error: 0, Status Code: 404
+[I 2019-09-02 06:11:12.0168] Request GET /version/battle.net {}
+Response 200 (0.2160 ms): {
+	"state" : 1007.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:13.0805] Request GET /agent {}
+Response 200 (0.0990 ms): {
+	"pid" : 24098.000000,
+	"user_id" : "501",
+	"user_name" : "wangzilun",
+	"state" : 1004.000000,
+	"version" : "2.18.1.6817",
+	"region" : "US",
+	"type" : "retail",
+	"opt_in_feedback" : true,
+	"session" : "500010294995226718",
+	"authorization" : "ACBA43F3FA7AC711D3601022FEC67049"
+}
+[I 2019-09-02 06:11:13.0815] Request POST /update {
+	"uid" : "battle.net"
+}
+Response 200 (0.2910 ms): {
+	"response_uri" : "/update/battle.net",
+	"result_uri" : "/game/battle.net"
+}
+[I 2019-09-02 06:11:14.0341] Request GET /update/battle.net {}
+Response 200 (0.2830 ms): {
+	"installed" : true,
+	"progress" : 0.000000,
+	"playable_progress" : 0.000000,
+	"download_complete" : true,
+	"patch_application_complete" : true,
+	"state" : 1008.000000,
+	"download_rate" : 0.000000,
+	"paused" : false,
+	"download_remaining" : 0.000000,
+	"info_download_bytes" : 0.000000,
+	"info_written_bytes" : 0.000000,
+	"info_failed_bytes" : 0.000000,
+	"info_expected_bytes" : 0.000000,
+	"info_expected_org_bytes" : 0.000000,
+	"needs_rebase" : false,
+	"ignore_disc" : false,
+	"using_media" : false,
+	"critical_update" : true,
+	"extended_status" : {
+		"current" : 0.000000,
+		"total" : 0.000000,
+		"state" : 0.000000,
+		"remaining" : 0.000000,
+		"rate" : 0.000000,
+		"unit_type" : "bytes"
+	},
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:15.0263] Request GET /version/battle.net {}
+Response 200 (0.2450 ms): {
+	"state" : 1004.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:16.0892] Executing operation: create_folder folderPath="/Users/wangzilun/Library/Application Support/Battle.net/Versions"
+[I 2019-09-02 06:11:16.0943] Request GET /update/battle.net {}
+Response 200 (0.3040 ms): {
+	"installed" : true,
+	"progress" : 0.000000,
+	"playable_progress" : 0.000000,
+	"download_complete" : false,
+	"patch_application_complete" : false,
+	"state" : 1000.000000,
+	"download_rate" : 0.000000,
+	"paused" : false,
+	"download_remaining" : 0.000000,
+	"info_download_bytes" : 0.000000,
+	"info_written_bytes" : 0.000000,
+	"info_failed_bytes" : 0.000000,
+	"info_expected_bytes" : 0.000000,
+	"info_expected_org_bytes" : 0.000000,
+	"needs_rebase" : false,
+	"ignore_disc" : false,
+	"using_media" : false,
+	"critical_update" : true,
+	"extended_status" : {
+		"current" : 0.000000,
+		"total" : 0.000000,
+		"state" : 0.000000,
+		"remaining" : 0.000000,
+		"rate" : 0.000000,
+		"unit_type" : "bytes"
+	},
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : false,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : false
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:17.0975] Request GET /update/battle.net {}
+Response 200 (0.3170 ms): {
+	"installed" : true,
+	"progress" : 0.000000,
+	"playable_progress" : 0.000000,
+	"download_complete" : false,
+	"patch_application_complete" : false,
+	"state" : 1003.000000,
+	"download_rate" : 0.000000,
+	"paused" : false,
+	"download_remaining" : 0.000000,
+	"info_download_bytes" : 0.000000,
+	"info_written_bytes" : 0.000000,
+	"info_failed_bytes" : 0.000000,
+	"info_expected_bytes" : 0.000000,
+	"info_expected_org_bytes" : 0.000000,
+	"needs_rebase" : false,
+	"ignore_disc" : false,
+	"using_media" : false,
+	"critical_update" : true,
+	"build_config_kv_pairs" : {
+		"build-num" : "11378",
+		"build-name" : "11378_1.15.2",
+		"build-branch" : "1.15.2",
+		"build-attributes" : "public",
+		"build-product" : "Phoenix",
+		"build-uid" : "bna",
+		"build-critical-patch-seqn" : "4"
+	},
+	"extended_status" : {
+		"current" : 0.000000,
+		"total" : 0.000000,
+		"state" : 0.000000,
+		"remaining" : 0.000000,
+		"unit_type" : "count"
+	},
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : false,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : false
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : false
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:21.0943] Executing operation: local_certificate for Blizzard Battle.net Local Cert
+[I 2019-09-02 06:11:22.0087] Request GET /update/battle.net {}
+Response 200 (0.3270 ms): {
+	"installed" : true,
+	"progress" : 0.000000,
+	"playable_progress" : 0.000000,
+	"download_complete" : true,
+	"patch_application_complete" : true,
+	"state" : 1004.000000,
+	"download_rate" : 485948.472661,
+	"paused" : false,
+	"download_total" : [
+		149304455.000000,
+		0.000000,
+		0.000000
+	],
+	"download_current" : [
+		149304455.000000,
+		0.000000,
+		0.000000
+	],
+	"thresholds" : [
+		1.000000,
+		1.000000
+	],
+	"download_remaining" : 0.000000,
+	"info_download_bytes" : 0.000000,
+	"info_written_bytes" : 0.000000,
+	"info_failed_bytes" : 0.000000,
+	"info_expected_bytes" : 0.000000,
+	"info_expected_org_bytes" : 0.000000,
+	"needs_rebase" : false,
+	"ignore_disc" : false,
+	"using_media" : false,
+	"critical_update" : true,
+	"build_config_kv_pairs" : {
+		"build-num" : "11378",
+		"build-name" : "11378_1.15.2",
+		"build-branch" : "1.15.2",
+		"build-attributes" : "public",
+		"build-product" : "Phoenix",
+		"build-uid" : "bna",
+		"build-critical-patch-seqn" : "4"
+	},
+	"extended_status" : {
+		"current" : 170.000000,
+		"total" : 170.000000,
+		"state" : 0.000000,
+		"remaining" : 0.000000,
+		"unit_type" : "count"
+	},
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:22.0101] Request GET /game/battle.net {}
+Response 200 (0.3970 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"enUS"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 54768.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[W 2019-09-02 06:11:22.0867] Request DELETE /agent {}
+Response 200 (0.0290 ms): {}
+[W 2019-09-02 06:11:24.0622] Authorizing client '/Applications/Battle.net.app/Contents/MacOS/Battle.net' (24106) for communication
+[I 2019-09-02 06:11:24.0622] Request GET /agent {}
+Response 200 (112.5990 ms): {
+	"pid" : 24098.000000,
+	"user_id" : "501",
+	"user_name" : "wangzilun",
+	"state" : 1004.000000,
+	"version" : "2.18.1.6817",
+	"region" : "US",
+	"type" : "retail",
+	"opt_in_feedback" : true,
+	"session" : "500010294995226718",
+	"authorization" : "E1377D37770423F2F6D38C7E33D4F4AF"
+}
+[I 2019-09-02 06:11:24.0635] Request GET /hardware {}
+Response 200 (0.1580 ms): {
+	"64bit" : true,
+	"os" : "Mac OS X 10.13.6",
+	"os_version_number" : "10.13.6.0",
+	"graphics_devices" : [
+		{
+			"name" : "Intel Iris Graphics 6100",
+			"vendor_id" : 32902.000000,
+			"video_memory" : 1610612736.000000
+		}
+	]
+}
+[I 2019-09-02 06:11:24.0645] Request GET /gamesession {}
+Response 200 (0.1250 ms): {}
+[I 2019-09-02 06:11:24.0654] Request POST /agent {
+	"priority" : {
+		"insert_at_head" : false,
+		"value" : 699.000000
+	},
+	"uid" : "blizzard_update_agent"
+}
+Response 200 (0.1170 ms): {}
+[I 2019-09-02 06:11:24.0674] Request GET /game/agent {}
+Response 200 (0.3220 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Users/Shared/Battle.net/Agent",
+	"installed" : true,
+	"installed_locales" : [],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "agent",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "",
+	"selected_asset_locale" : "",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "Agent\\.(%d)*\\\\Agent\\.app",
+			"relative_path" : "Agent.app",
+			"switcher" : true,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		""
+	],
+	"update_method" : "containerless ngdp",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 48910.000000,
+	"region" : "cn",
+	"branch" : "",
+	"local_version" : "2.18.1.6817",
+	"active_config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+	"current_version" : 6817.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		}
+	}
+}
+[I 2019-09-02 06:11:24.0685] Request GET /game/battle.net {}
+Response 200 (0.3870 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"enUS"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 52183.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:24.0750] Request POST /game/battle.net {
+	"region" : "US"
+}
+Response 200 (0.1570 ms): {}
+[I 2019-09-02 06:11:24.0765] Request POST /agent {
+	"region" : "US"
+}
+Response 200 (0.1720 ms): {}
+[I 2019-09-02 06:11:24.0778] Request GET /game/battle.net {}
+Response 200 (0.4280 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"enUS"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 52091.000000,
+	"region" : "US",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:24.0997] Moving Battle.net install path to '/Applications/Battle.net.app'
+[I 2019-09-02 06:11:24.0998] Request POST /register {
+	"install_dir" : "/Applications/Battle.net.app",
+	"primary_locale_hint" : "enUS",
+	"uid" : "battle.net"
+}
+Response 200 (0.7970 ms): {
+	"games" : [
+		{
+			"result_uri" : "/game/battle.net",
+			"uid" : "battle.net",
+			"region" : "us",
+			"product_code" : "bna",
+			"install_dir" : "/Applications/Battle.net.app"
+		}
+	]
+}
+[I 2019-09-02 06:11:25.0013] Request POST /agent/download {
+	"backfill_down_limit" : 100000.000000,
+	"down_limit" : 0.000000
+}
+Response 200 (0.1800 ms): {}
+[I 2019-09-02 06:11:25.0028] Duplicate POST /version completed in 0.2000 ms
+[I 2019-09-02 06:11:25.0050] GameProcessManager - DISCOVERED: process - uid:battle.net, pid: 24106, parent pid: 1, pid path : /Applications/Battle.net.app/Contents/MacOS/Battle.net
+[W 2019-09-02 06:11:25.0158] Authorizing client '/Users/wangzilun/Library/Application Support/Battle.net/Versions/Battle.net.11378/battle.net-core.framework/Helpers/SystemSurvey' (24110) for communication
+[I 2019-09-02 06:11:25.0158] Request GET /agent {}
+Response 200 (190.1060 ms): {
+	"pid" : 24098.000000,
+	"user_id" : "501",
+	"user_name" : "wangzilun",
+	"state" : 1004.000000,
+	"version" : "2.18.1.6817",
+	"region" : "us",
+	"type" : "retail",
+	"opt_in_feedback" : true,
+	"session" : "500010294995226718",
+	"authorization" : "43D587ACBEC2EFD00D2A84F575E18DA0"
+}
+[W 2019-09-02 06:11:25.0252] Authorizing client '/Users/Shared/Battle.net/Agent/Agent.6817/Agent.app/Contents/MacOS/Agent' (24112) for communication
+[I 2019-09-02 06:11:25.0253] Request GET /agent {}
+Response 200 (131.9990 ms): {
+	"pid" : 24098.000000,
+	"user_id" : "501",
+	"user_name" : "wangzilun",
+	"state" : 1004.000000,
+	"version" : "2.18.1.6817",
+	"region" : "us",
+	"type" : "retail",
+	"opt_in_feedback" : true,
+	"session" : "500010294995226718",
+	"authorization" : "7FA4495684C4B56E644D8B925B3022D2"
+}
+[I 2019-09-02 06:11:25.0275] Request GET /version/battle.net {}
+Response 200 (0.3710 ms): {
+	"state" : 1007.000000,
+	"region" : "us",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:26.0566] Request GET /version/battle.net {}
+Response 200 (0.2950 ms): {
+	"state" : 1004.000000,
+	"region" : "us",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	}
+}
+[I 2019-09-02 06:11:27.0647] Request GET /gamesession {}
+Response 200 (0.0640 ms): {
+	"battle.net" : {
+		"1" : {
+			"request_id" : 0.000000,
+			"pid" : 24106.000000,
+			"pid_path" : "/Applications/Battle.net.app/Contents/MacOS/Battle.net",
+			"binary_type" : "game"
+		}
+	}
+}
+[I 2019-09-02 06:12:24.0695] Request GET /game/agent {}
+Response 200 (0.2460 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Users/Shared/Battle.net/Agent",
+	"installed" : true,
+	"installed_locales" : [enUS],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "agent",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "",
+	"selected_asset_locale" : "",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "Agent\\.(%d)*\\\\Agent\\.app",
+			"relative_path" : "Agent.app",
+			"switcher" : true,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		""
+	],
+	"update_method" : "containerless ngdp",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 0.000000,
+	"region" : "us",
+	"branch" : "",
+	"local_version" : "2.18.1.6817",
+	"active_config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+	"current_version" : 6817.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "116edcf3d4151dd3b00b9cfc55c04e3d",
+			"display_version" : "2.18.1.6817",
+			"playable" : true
+		}
+	}
+}
+[I 2019-09-02 06:12:24.0810] Request GET /game/battle.net {}
+Response 200 (0.3010 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"enUS"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 1569.000000,
+	"region" : "us",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	},
+	"operations" : {
+		"gamesession" : "/gamesession/battle.net"
+	}
+}
+[I 2019-09-02 06:13:24.0825] Request GET /game/battle.net {}
+Response 200 (0.3420 ms): {
+	"background_download_available" : false,
+	"background_download_complete" : false,
+	"binary_launch_path" : "",
+	"binary_launch_path64" : "",
+	"download_complete" : true,
+	"install_dir" : "/Applications/Battle.net.app",
+	"installed" : true,
+	"installed_locales" : [
+		"enUS"
+	],
+	"launch_arguments" : [],
+	"patch_application_complete" : true,
+	"product" : "bna",
+	"account_country" : "",
+	"geo_ip_country" : "",
+	"selected_locale" : "enUS",
+	"selected_asset_locale" : "enUS",
+	"update_progress" : 0.000000,
+	"binaries" : {
+		"game" : {
+			"regex" : "",
+			"relative_path" : "",
+			"switcher" : false,
+			"launch_arguments" : []
+		}
+	},
+	"display_locales" : [
+		"enUS"
+	],
+	"update_method" : "client update",
+	"supports_multibox" : true,
+	"supports_32bit" : false,
+	"version_cooldown" : 0.000000,
+	"region" : "us",
+	"branch" : "",
+	"local_version" : "1.15.2.11378",
+	"active_config_key" : "cc6899a5a202c8376b39fe38426729d2",
+	"current_version" : 11378.000000,
+	"playable" : true,
+	"regional_version_info" : {
+		"us" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"eu" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"cn" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"selected" : true,
+			"playable" : true
+		},
+		"kr" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"tw" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"sg" : {
+			"config_key" : "cc6899a5a202c8376b39fe38426729d2",
+			"display_version" : "1.15.2.11378",
+			"playable" : true
+		},
+		"beta" : {
+			"config_key" : "26cc076580a47b93d902559373b9d039",
+			"display_version" : "1.15.2.11379",
+			"playable" : false
+		}
+	},
+	"operations" : {
+		"gamesession" : "/gamesession/battle.net"
+	}
+}
